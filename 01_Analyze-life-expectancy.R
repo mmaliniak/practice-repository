@@ -28,7 +28,7 @@ tidy(mod1)
 # Plot the results
 ggplot(data = le_data %>% filter(state == "California", race == "black", sex == "Female"),
        aes(x = year, y = LE)) + 
-  geom_point() +
+  geom_point(color="red") + #color change
   theme_bw() +
   geom_abline(intercept = -232.4959533, slope = 0.1544538)
 
