@@ -26,7 +26,7 @@ mod1 <- lm(LE ~ year, dat = le_data %>% filter(state == "California", race == "b
 tidy(mod1)
 
 # Plot the results
-ggplot(data = le_data %>% filter(state == "California", race == "black", sex == "Female"),
+ggplot(data = le_data %>% filter(state == "Georgia", race == "black", sex == "Female"),
        aes(x = year, y = LE)) + 
   geom_point(color="red") + #color change
   theme_bw() +
